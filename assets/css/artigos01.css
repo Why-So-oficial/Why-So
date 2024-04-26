@@ -1,0 +1,116 @@
+.main{
+    margin-top: 80px;
+    
+}
+
+.titulo-artigo{
+    text-align: center;
+    color: #fff;
+    max-width: 700px;
+    margin: 0px auto 20px auto;
+    text-align: left;
+}
+
+.img-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    cursor: pointer;
+}
+  
+.music-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+#info-faixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+  
+.progress-audio{
+    height: 3px;
+    width: 3px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#anterior, #proximo {
+    font-size: 3rem;
+}
+  
+#play-pause {
+    font-size: 4rem;
+}
+  
+#container-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-artigo{
+    max-width: 700px;
+    display: block;
+    margin: auto auto 80px;
+    text-align: justify;
+    color: #fff;
+}
+
+#post-signature{
+    font-size: 13px;
+    max-width: 700px;
+    margin: auto;
+    color: lightgray;
+}
+
+.img-artigo {
+    max-width: 800px;
+    margin: 20px auto 20px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+#videoRedirect{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+.paragrafo-artigo{
+    font-size: 20px;
+    text-indent: 2rem;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 650px){
+    .paragrafo-artigo{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    .img-artigo{
+        margin: 25px;
+    }
+}

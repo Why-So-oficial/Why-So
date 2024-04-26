@@ -1,0 +1,97 @@
+.main{
+    display: flex;
+}
+.section{
+    display:flex;
+    width: 1300px;
+    height: 230px;
+    margin: 30px;
+    padding: 9px;
+    box-sizing: border-box;
+    border: 1px var(--Azul);
+    background-color: var(--Azul);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    gap: 25px;
+    box-shadow: 0px 0px 10px 2px var(--Preto);
+}
+.container-artigos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:10px auto;
+}
+
+.letras{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 15px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+}
+
+.imagem-artigo{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 18%;
+    max-width: 40%;
+    height: 200px;
+    border-radius: 10px; 
+    margin-bottom: 0; 
+}
+
+.resumo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.botão{
+    display: flex;
+    background: none;
+    font-weight: 500;
+    border-radius: 50px;
+    border: none;
+    padding: 4px 10px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.botão:hover{
+    font-size: 18px;
+    transition: all .4s;
+}
+.botão::after{
+    background: none repeat scroll 0 0 transparent;
+    display: block;
+    content: " ";
+    width: 0;
+    height: 2px;
+    background: var(--Azul-Ciano);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.5s ease 0s, left .5s ease 0s;
+}
+
+.botão:hover::after{
+    width: 100%;
+    left: 0;
+}
