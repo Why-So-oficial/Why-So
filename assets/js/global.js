@@ -44,7 +44,7 @@ body.appendChild(footer);
 
 const contentFooter = 
     '<span class="logo-footer">'+
-            '<img class="logo-footer" src="../img/logo-footer.png" alt="Why so">'+
+            '<a id="backToTop"><img class="logo-footer" src="../img/logo-footer.png" alt="Why so"></a>'+
     '</span>'+
     '<p id="direitos">Todos os direitos reservados&copy;</p>'+
     '<div class="sup">'+
@@ -70,7 +70,10 @@ hamburgMenu.addEventListener('click',()=>{
     
 });
 
-if(document.body.clientWidth > 785){
-    mobileMenu.classList.remove('active');
-    hamburgMenu.classList.remove('mobile-active');
-};
+//Criacao para voltar para o topo
+
+const backToTop = document.querySelector('#backToTop');
+
+backToTop.addEventListener('click', ()=>{
+    window.scrollTo(0, 0);
+})
