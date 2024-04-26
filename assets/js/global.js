@@ -44,7 +44,7 @@ body.appendChild(footer);
 
 const contentFooter = 
     '<span class="logo-footer">'+
-            '<img id="img-footer" src="../img/logo-footer.png" alt="Why so">'+
+            '<img class="logo-footer" src="../img/logo-footer.png" alt="Why so">'+
     '</span>'+
     '<p id="direitos">Todos os direitos reservados&copy;</p>'+
     '<div class="sup">'+

@@ -21,11 +21,13 @@
 <body id="body">
     <!-- Header -->
         <header id="header">
-            <a href="index.html"><img class="logo-header" src="assets/img/logo-header.png" alt="logo Why so"></a>
+            <a href="index.html">
+                <img class="logo-header" src="assets/img/logo-header.png" alt="logo Why so">
+            </a>
             <nav class="navMenu">
                 <div class="menu">
-                    <a class="nav-item" href="index.html">Home</a>
                     <a class="nav-item" href="assets/html/quemSomos.html" target="_blank">Quem somos</a>
+                    <a class="nav-item" href="#categorias">Categorias</a>
                 </div>
             </nav>
             <div class="hamburguer">
@@ -34,18 +36,14 @@
                 <span class="bar"></span>
             </div>
             <nav class="menu-mobile">
-                <a class="nav-item-mob" href="/index.html">Home</a>
-                <a class="nav-item-mob" href="/assets/html/quemSomos.html">Quem somos</a>
-                <a class="nav-item-mob" href="#">Categorias</a>
+                <a class="nav-item-mob" href="assets/html/quemSomos.html">Quem somos</a>
+                <a class="nav-item-mob" href="#categorias">Categorias</a>
             </nav>
         </header>
 
         <main class="main">
             
-        <section>
-            <div id="ads" class="ads">
-                <a href="https://www.mg.senac.br/Paginas/default.aspx" target="_blank"><img  class="logoAds" src="./assets/img/logoAds.jpg" ></a>
-            </div>
+        <section class="content">
             <!-- CATEGORIAS -->
             <div class="container-carrousel">
                 <div id="carrousel" class="carousel slide" data-bs-ride="carousel">
@@ -99,13 +97,17 @@
                     <img class="img-conteudo" src="./assets/img/artigos.jfif" alt="">
                     </div>
                 </a>
-
+                
             </section>
+            <div id="ads" class="ads">
+                <a href="https://www.mg.senac.br/Paginas/default.aspx" target="_blank"><img  class="logoAds" src="./assets/img/logoAds.jpg" ></a>
+            </div>
         </main>
+
         <footer class="footer">
             <span class="logo-footer">
                 <a id="backToTop">
-                    <img id="img-footer" src="assets/img/logo-footer.png" alt="Why so">
+                    <img class="logo-footer" src="assets/img/logo-footer.png"  alt="Why so">
                 </a>
             </span>
             <p id="direitos">Todos os direitos reservados&copy;</p>

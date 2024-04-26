@@ -8,11 +8,6 @@ hamburgMenu.addEventListener('click',()=>{
     
 });
 
-if(document.body.clientWidth > 785){
-    mobileMenu.classList.remove('active');
-    hamburgMenu.classList.remove('mobile-active');
-};
-
 // carrousel 
 const myCarouselElement = document.querySelector('#carrousel')
 
