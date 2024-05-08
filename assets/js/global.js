@@ -19,6 +19,7 @@ const contentHeader =
             '<nav class="navMenu">'+
                 '<div class="menu">'+
                     '<a class="nav-item" href="../../index.html">Home</a>'+
+                    '<a class="nav-item-mob" href="../html/artigosGerais.html">Artigos</a>'+
                     '<a class="nav-item" href="quemSomos.html">Quem somos</a>'+
                 '</div>'+
             '</nav>'+
@@ -28,9 +29,9 @@ const contentHeader =
                 '<span class="bar"></span>'+
             '</div>'+
             '<nav class="menu-mobile">'+
-                '<a class="nav-item-mob" href="../../index.html">Home</a>'+
-                '<a class="nav-item-mob" href="../html/quemSomos.html">Quem somos</a>'+
-                '<a class="nav-item-mob" href="#">Categorias</a>'+
+            '<a class="nav-item-mob" href="../../index.html">Home</a>'+
+            '<a class="nav-item-mob" href="../html/artigosGerais.html">Artigos</a>'+
+            '<a class="nav-item-mob" href="../html/quemSomos.html">Quem somos</a>'+
             '</nav>'+
         '</header>';
 //Adiçao do botão home no header 
@@ -43,20 +44,29 @@ footer.setAttribute('class', 'footer');
 body.appendChild(footer);
 
 const contentFooter = 
+    '<div class="footer-link img">'+
     '<span class="logo-footer">'+
-            '<a id="backToTop"><img class="logo-footer" src="../img/logo-footer.png" alt="Why so"></a>'+
+        '<a id="backToTop">'+
+            '<img class="logo-footer" src="../img/logo-footer.png"  alt="Why so">'+
+        '</a>'+
     '</span>'+
+'</div>'+
+
+'<div class="footer-link">'+
     '<p id="direitos">Todos os direitos reservados&copy;</p>'+
+'</div>'+
+
+'<div class="footer-link sup">'+
     '<div class="sup">'+
-    '<a href="https://youtube.com/@Whyso_ofc?si=xBRdUNteaPMieeCi" target="_blank" class="youtube-footer">'+
-        '<i id="youtube-bi2" class="bi bi-youtube"></i>'+
-    '</a>'+
-    '<a  class="bi bi-instagram" href="https://www.instagram.com/whyso_031?igsh=MWttdWE0a203anFtag==" target="_blank"></a>'+
-    '<div class="suporte">'+
-            '<a id="suport" href="assets/html/suporte.html" class="nav-footer">'+
-            '<i class="bi bi-person-raised-hand"></i> Suporte</a>'+
-            '</div>'+
-    '</div>';
+        '<a href="https://youtube.com/@Whyso_ofc?si=xBRdUNteaPMieeCi" target="_blank" class="youtube-footer">'+
+            '<i id="youtube-bi2" class="bi bi-youtube"></i>'+
+        '</a>'+
+        '<a  class="bi bi-instagram" href="https://www.instagram.com/whyso_031?igsh=MWttdWE0a203anFtag==" target="_blank"></a>'+
+
+        '<a id="suport" href="assets/html/construcao.html" class="nav-footer">'+
+        '<i class="bi bi-person-raised-hand"></i> Suporte</a>'+
+    '</div>'+
+'</div>';
 
 footer.innerHTML += contentFooter;
 

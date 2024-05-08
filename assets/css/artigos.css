@@ -10,7 +10,7 @@ body{
 
 main{
     margin-top: 100px;
-    padding: 20px;
+    padding: 20px ;
     background-color: #f5f5f5;
     width: 80vw;
     max-width: 1200px;
@@ -30,10 +30,9 @@ h1{
 }
 
 .text-artigo{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 500;
-    padding: 0px 20px;
-    text-align: justify;
+    padding: 0px 10px;
 }
 
 .container-img{

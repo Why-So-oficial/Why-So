@@ -25,7 +25,7 @@ body{
     display: grid;
     min-height: 100vh;
     max-width: 100vw;
-    grid-template-rows: 1fr 14fr 90px;
+    grid-template-rows: 100px 14fr 80px;
     grid-template-areas:"header" "main" "footer";
     background-color: var(--Preto-Claro);
     color: #fff;
@@ -48,7 +48,7 @@ header{
 }
 
 .logo-header{
-    height: 70px;
+    width: 200px;
     padding: 0px 30px;
     cursor: pointer;
     transition: .4s ease-out;
@@ -178,16 +178,33 @@ header{
     display: flex;
     font-weight: bold;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: var(--Azul);
     color: white;
     box-shadow: 0px 0px 7px 3px #00000053;
+    overflow: hidden ;
+    gap: 10%;
+}
+
+.footer-link{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-link.img{
+    justify-content: start;
+}
+
+.footer-link.sup{
+    justify-content: flex-end;
 }
 
 .logo-footer{
-    width: 80px;
+    width: 85px;
     transition: .3s;
-    margin-left: 20px;
+    margin-left: 8px;
 }
 
 .logo-footer:hover{
@@ -204,7 +221,6 @@ header{
 .sup{
     display: flex;
     gap: 20px;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -283,18 +299,23 @@ header{
 
 @media (max-width: 450px){
     .logo-footer{
-        width: 200px;
+        width: 85px;
     }
 }
 
-@media (max-width:380px){
-    .logo-footer{
-        display: none;
-    }
+@media (max-width:395px){
+
 
     .sup{
-        width: 100%;
-        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    #suport{
+        padding-right: 9px;
+        font-size: 15px;
     }
 
     #youtube-bi2{
