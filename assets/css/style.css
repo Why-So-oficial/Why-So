@@ -52,7 +52,7 @@
 }
 /* carousel*/
 #categorias{
-    background-color: var(--Azul);
+    background-color: var(--Azul-Escuro);
     text-align: center;
     color: var(--Branco);
     padding: 10px;
@@ -83,7 +83,7 @@
     width: 350px;
     max-height: 390px;
     padding: 5px 5px 15px 5px;
-    background-color: var(--Azul);
+    background-color: var(--Azul-Escuro);
     color: white;
     display: flex;
     flex-direction: column;
@@ -149,9 +149,6 @@
 }
 
 
-.footer-link{
-    width: 30%;
-}
 
 @media screen and (max-width:760px) {
     .categorias{

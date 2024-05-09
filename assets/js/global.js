@@ -21,6 +21,7 @@ const contentHeader =
                     '<a class="nav-item" href="../../index.html">Home</a>'+
                     '<a class="nav-item-mob" href="../html/artigosGerais.html">Artigos</a>'+
                     '<a class="nav-item" href="quemSomos.html">Quem somos</a>'+
+                    '<a class="nav-item" href="../../podcast.html">Podcast</a>'+
                 '</div>'+
             '</nav>'+
             '<div class="hamburguer">'+
@@ -47,7 +48,7 @@ const contentFooter =
     '<div class="footer-link img">'+
     '<span class="logo-footer">'+
         '<a id="backToTop">'+
-            '<img class="logo-footer" src="../img/logo-footer.png"  alt="Why so">'+
+            '<video class="logo-footer" src="../video/logo-footer.mp4"  alt="Why so" autoplay loop>'+
         '</a>'+
     '</span>'+
 '</div>'+

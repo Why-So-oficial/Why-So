@@ -47,3 +47,16 @@ h1{
     height: auto;
     margin: 20px auto;
 }
+
+.img-artigo-inside{
+    width: 65%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/*Exclusivo: Artigo 9*/
+.trailers{
+    width: 65%;
+    height: 100%;
+    margin: 20px auto;
+}
