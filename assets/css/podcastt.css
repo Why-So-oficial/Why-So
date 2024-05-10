@@ -67,6 +67,7 @@
     height: 8px;
     width: 50%;
     border-radius: 5px;
+    transition: .3s;
 }
 
 .sound{

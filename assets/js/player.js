@@ -14,8 +14,16 @@ function showPodcast(){
     logoPlayer.src = songs[index].photo;
     const audio = new Audio(songs[index].src);
     
+    audio.play()
     audio.addEventListener('loadedmetadata',() => {
       console.log((audio.duration/60).toFixed(2));
+      
+    })
+
+    audio.addEventListener('timeupdate',() => {
+        const a = (audio.currentTime /audio.duration )*100
+
+        progressBar.style.width = a*3 + "%"
     })
 }
 
