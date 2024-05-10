@@ -19,9 +19,9 @@ const contentHeader =
             '<nav class="navMenu">'+
                 '<div class="menu">'+
                     '<a class="nav-item" href="../../index.html">Home</a>'+
-                    '<a class="nav-item-mob" href="../html/artigosGerais.html">Artigos</a>'+
-                    '<a class="nav-item" href="quemSomos.html">Quem somos</a>'+
-                    '<a class="nav-item" href="../../podcast.html">Podcast</a>'+
+                    '<a class="nav-item" href="./artigosGerais.html">Artigos</a>'+
+                    '<a class="nav-item" href="./quemSomos.html">Quem somos</a>'+
+                    '<a class="nav-item" href="./podcast.html">Podcast</a>'+
                 '</div>'+
             '</nav>'+
             '<div class="hamburguer">'+
@@ -30,9 +30,9 @@ const contentHeader =
                 '<span class="bar"></span>'+
             '</div>'+
             '<nav class="menu-mobile">'+
-            '<a class="nav-item-mob" href="../../index.html">Home</a>'+
-            '<a class="nav-item-mob" href="../html/artigosGerais.html">Artigos</a>'+
-            '<a class="nav-item-mob" href="../html/quemSomos.html">Quem somos</a>'+
+            '<a class="nav-item-mob" href="./index.html">Home</a>'+
+            '<a class="nav-item-mob" href="./artigosGerais.html">Artigos</a>'+
+            '<a class="nav-item-mob" href="./quemSomos.html">Quem somos</a>'+
             '</nav>'+
         '</header>';
 //Adiçao do botão home no header 
