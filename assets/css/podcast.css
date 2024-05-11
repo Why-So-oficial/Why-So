@@ -3,28 +3,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 20px;
 }
 
 main{
-  background-color: black;
+  background-color: rgb(101, 80, 80);
   color: black;
 }
 
 .container {
-  background-image: linear-gradient(to bottom, #1f1b1bf5, #0a0a0af8);
-  min-height: 100vh;
-  max-width: 100vw !important;
-  width: 100vw;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+
+  margin: 50px auto;
+  
 }
 
 .imgContainer{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100%;  
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -64,32 +64,33 @@ main{
 }
 
 .gridContainer {
-  display: fle4;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "mainContent sidebarContent";
+  justify-content: center;
+  display: grid;
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: auto;
   padding: 20px;
-  flex: 1 0 auto;
 }
 
 .DivmainCardImg{
   display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 10px;
   width: 100%;
 }
 
 .mainCardImg {
-  Background-color: #aaa;
-  border-radius: 50%;
-  width: 250px;
-  height: 210px;
+  Background-color: #000000;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10px;
+  width: 300px;
+  height: 250px;
   overflow: hidden;
   position: relative;
 
 }
+
 
 .sidebarCardImg {
   width: 100%;
@@ -97,27 +98,41 @@ main{
 }
 
 .categoryCard {
+  background: linear-gradient(
+    110deg,
+    rgba(145, 146, 147, 0.28) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  backdrop-filter: blur(10%);
   width: 340px;
   height: 420px;
   border-radius: 20px;
   transition: 0.5s;
   cursor: pointer;
-  background-image: linear-gradient(to bottom, #09267586, #0e0d0d);
-  border-style: solid;
-  border-color: rgb(238, 238, 238);
   display: grid;
 }
 
 .categoryCard:hover {
   border-color: rgb(5, 131, 120);
+  /*width: 360px;*/
+  padding-top: 8px;
+  background: linear-gradient(
+    190deg,
+    rgba(35, 35, 36, 0.833) 0%,
+    rgba(8, 8, 8, 0.483) 100%
+  );
+  transition-duration: 0.5s;
+  backdrop-filter: blur(1%);
 }
 
 .mainContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding-bottom: 60px;
 }
 
 .mainCategoryCardTitle {

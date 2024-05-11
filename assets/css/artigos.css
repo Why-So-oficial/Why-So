@@ -12,7 +12,6 @@ main{
     margin-top: 100px;
     padding: 20px ;
     background-color: #f5f5f5;
-    width: 80vw;
     max-width: 1200px;
     color: black;
     box-shadow: 0px 0px 5px 3px #00000060;
@@ -33,6 +32,7 @@ h1{
     font-size: 1.1rem;
     font-weight: 500;
     padding: 0px 10px;
+    text-align: justify;
 }
 
 .container-img{
@@ -46,17 +46,12 @@ h1{
     width: 80%;
     height: auto;
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .img-artigo-inside{
     width: 65%;
     height: auto;
-    margin: 20px auto;
-}
-
-/*Exclusivo: Artigo 9*/
-.trailers{
-    width: 65%;
-    height: 100%;
     margin: 20px auto;
 }

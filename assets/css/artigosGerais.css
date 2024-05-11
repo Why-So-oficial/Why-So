@@ -2,6 +2,8 @@
     grid-area: main;
     display: flex;
 }
+
+
 .articles{
     display: flex;
     flex-direction: column;
@@ -128,7 +130,7 @@
     width: 100%;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1300px){
     .articles{
         max-width: 80vw;
     }
