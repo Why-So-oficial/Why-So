@@ -4,18 +4,42 @@
     box-sizing: border-box;
 }
 
+#arrow{
+    position: fixed;
+    bottom:150px;
+    right: 0;
+    font-size: 2.3rem;
+    color: var(--Azul-Ciano);
+    cursor: pointer;
+    z-index: 9;
+    transition: .4s;
+}
+
+#arrow.activePlayer{
+    transform: rotate(180deg);
+}
+
 #player{
     width: 100%;
     background-color: var(--Preto);
     height: 60px;
     position: fixed;
-    bottom: 80px;
-    left: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 15px;
     gap: 50px;
+    transition: .4s;
+    right: -100%;
+}
+
+.characteristics{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 80px;
 }
 
 .logo-player{
@@ -35,6 +59,7 @@
 }
 
 .buttons{
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -46,42 +71,45 @@
     cursor: pointer;
 }
 
-
+.counter{
+    display: block;
+}
 
 .container-name{
-    width: 16%;
+    width: 80%;
     white-space: nowrap; 
     overflow: hidden;
     text-overflow: ellipsis;
     
 }
 
-.text{
-    transition: .3s;
+.timer{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .activeSlide{
-   animation: slide 8s infinite;
+   animation: slide 10s infinite ease-in-out ;
+}
+
+#player.activePlayer{
+    right: 0%;
 }
 
 @keyframes slide {
     0% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Inicia fora da tela na direita */
     }
     100% {
-        transform: translateX(-120%);
+        transform: translateX(-175%); /* Desloca completamente para a esquerda */
     }
-}
-
+}    
 .progress{
-    height: 100%;
     display: flex;
     align-items: center;
-    flex-direction: row;
-}
-
-.progress{
-    width:40%;
+    width:80%;
     height: 8px;
     background-color: #ddd;
     cursor: pointer;
@@ -89,7 +117,9 @@
     border-radius: 5px;
     border: 1px solid #292929;
 }
+
 .progress-bar{
+    width: 0%;
     background-color:var(--Azul-Ciano);
     height: 5px;
     border-radius: 5px;
@@ -102,4 +132,34 @@
 .sound i{
     font-size: 2rem;
     cursor: pointer;
+}
+
+
+/* Para telas menores, altere para um layout de coluna */
+@media screen and (max-width: 1000px) {
+   #arrow{
+    bottom: 200px;
+   }
+   
+    #player{
+        height: 200px;
+        flex-direction: column;
+        gap: 0px;
+   }   
+
+   .logo-player{
+    width: 200px;
+    height: 100px;
+   }
+   
+   .characteristics{
+    width: 100%;
+   }
+   .buttons{
+    width: 60%;
+   }
+   .timer{
+    width: 100%;
+   }
+
 }

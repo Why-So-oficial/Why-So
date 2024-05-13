@@ -1,6 +1,7 @@
 //Pega os audios dos podcasts
 import songs from "../js/songs.js";
 
+const player = document.querySelector('#player')
 const logoPlayer = document.querySelector('#logo-player');
 const previousBtn = document.querySelector('#previus-button');
 const nextBtn = document.querySelector('#next-button');
@@ -10,7 +11,6 @@ const progressBar = document.querySelector('.progress-bar');
 const timeDuration = document.querySelector('#time-duration');
 const nameCap = document.querySelector('.name-cap')
 
-const text = document.querySelector('.text');
 
 let index = 0;
 const audio = new Audio(songs[index].src);
@@ -62,7 +62,7 @@ let playing = false;
 function playSong(){
     playPause.classList.remove('bi-play-circle-fill');
     playPause.classList.add('bi-pause-circle-fill');
-    text.classList.add('activeSlide');
+    nameCap.classList.add('activeSlide');
     audio.play();
     playing = true;
 }
@@ -72,7 +72,7 @@ function stopSong(){
     playPause.classList.add('bi-play-circle-fill');
     playPause.classList.remove('bi-pause-circle-fill');
 
-    text.classList.remove('activeSlide');
+    nameCap.classList.remove('activeSlide');
     audio.pause();
     playing = false;
 }
@@ -124,6 +124,15 @@ function updateTime(){
     const progressWidth = (audio.currentTime / audio.duration) * 100;
 
     progressBar.style.width = progressWidth + "%";
+
+    //Criacao de mudar o tempo quando clicar
+    const progress = document.querySelector('.progress');
+    progress.addEventListener('click',(e) => {
+      
+        const newTime = (e.offsetX / progress.offsetWidth) * audio.duration;
+        audio.currentTime = newTime;
+    })
+    
 };
 
 audio.ontimeupdate = updateTime;
@@ -134,3 +143,9 @@ function formatZero(n){
     }
     return n; 
 }
+
+const arrow = document.querySelector('#arrow');
+arrow.addEventListener('click',() => {
+  player.classList.toggle('activePlayer');
+  arrow.classList.toggle('activePlayer');
+})
