@@ -14,13 +14,13 @@ section {
   justify-content: center;
   align-items: center;
   background:#262626;
-  min-height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 
 .content {
   margin: 80px 0px;
-  height: 400px;
+  height: 420px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -31,7 +31,6 @@ section {
     rgba(16, 58, 197, 0.28) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  backdrop-filter: blur(30px);
   border-radius: 20px;
   width: 80vw;
   max-width: 890px;
@@ -46,13 +45,12 @@ section {
   align-items: center;
   max-width: 450px;
   padding: 0 35px;
-  text-align: justify;
 }
 
 .info p{
   color: #fff;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 20px;
   line-height: 1.5;
 }
@@ -118,7 +116,7 @@ section {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height:100%;
   overflow: hidden;
 }
 

@@ -148,4 +148,24 @@ const arrow = document.querySelector('#arrow');
 arrow.addEventListener('click',() => {
   player.classList.toggle('activePlayer');
   arrow.classList.toggle('activePlayer');
+
+  if(!arrow.classList.contains('activePlayer')){
+    arrow.classList.remove('activePlayer');
+    arrow.style.bottom = '90px'
+
+    
+  }else{
+    arrow.classList.add('activePlayer');
+
+   const widthClient =  ()=>{
+    if(window.offsetWidth < 999){
+        return '240px'
+    }else{
+        return '100px'
+    }
+   }
+   arrow.style.bottom =  widthClient;
+
+  }
 })
+
