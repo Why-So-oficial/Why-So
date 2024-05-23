@@ -97,6 +97,11 @@ header{
 
 .nav-item:hover::after{
     width: 100%;
+    color: white;
+}
+
+.nav-item:hover{
+    color: white;
 }
 
 .hamburguer{
