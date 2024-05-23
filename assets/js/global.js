@@ -17,8 +17,8 @@ const contentHeader =
             '<a href="../../index.html"><img class="logo-header" src="../img/logo-header.png" alt="logo Why so"></a>'+
             '<nav class="navMenu" >'+
                 '<div class="menu">'+
-                    '<a class="nav-item" href="../../index.html">Home</a>'+
                     '<a class="nav-item" href="./artigosGerais.html">Artigos</a>'+
+                    '<a class="nav-item" href="https://youtube.com/@Whyso_ofc?si=xBRdUNteaPMieeCi" target="_blank">Youtube</a>'+
                     '<a class="nav-item" href="./podcast.html">Podcast</a>'+
                     '<a class="nav-item" href="./quemSomos.html">Quem somos</a>'+
                 '</div>'+
@@ -29,8 +29,9 @@ const contentHeader =
                 '<span class="bar"></span>'+
             '</div>'+
             '<nav class="menu-mobile">'+
-            '<a class="nav-item-mob" href="./index.html">Home</a>'+
             '<a class="nav-item-mob" href="./artigosGerais.html">Artigos</a>'+
+            '<a class="nav-item-mob" href="https://youtube.com/@Whyso_ofc?si=xBRdUNteaPMieeCi" target="_blank">Youtube</a>'+
+            '<a class="nav-item-mob" href="./podcast.html">Podcast</a>'+
             '<a class="nav-item-mob" href="./quemSomos.html">Quem somos</a>'+
             '</nav>';
 //Adiçao do botão home no header 
@@ -46,7 +47,6 @@ const contentFooter =
     '<div class="footer-link img">'+
     '<span class="logo-footer">'+
         '<a id="backToTop">'+
-            //'<video class="logo-footer" src="../video/logo-footer.mp4"  alt="Why so" autoplay loop>'+
             '<img class="logo-footer" src="../img/logo-footer.png">'+
         '</a>'+
     '</span>'+
@@ -63,7 +63,7 @@ const contentFooter =
         '</a>'+
         '<a  class="bi bi-instagram" href="https://www.instagram.com/whyso_031?igsh=MWttdWE0a203anFtag==" target="_blank"></a>'+
 
-        '<a id="suport" href="assets/html/construcao.html" class="nav-footer">'+
+        '<a id="suport" href="suporte.html" class="nav-footer">'+
         '<i class="bi bi-person-raised-hand"></i> Suporte</a>'+
     '</div>'+
 '</div>';

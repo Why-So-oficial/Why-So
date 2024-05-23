@@ -8,9 +8,11 @@
   box-sizing: border-box;
 }
 
+
 section {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background:#262626;
@@ -18,9 +20,9 @@ section {
   overflow: hidden;
 }
 
-.content {
+.cont{
   margin: 80px 0px;
-  height: 420px;
+  height: 50%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -37,6 +39,7 @@ section {
   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset, 0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 9;
 }
+
 
 .info {
   display:flex;
@@ -224,9 +227,311 @@ section {
 }
 
 @media (max-width:960px) {
-  .content{
+  .cont{
     height: auto;
     padding: 10px 0px;
     flex-direction: column-reverse;
+  }
+}
+
+/*QUEM SOMOS*/
+
+.sobre-nos {
+  background: #002d2b;
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  font-family: 'Nova Square', cursive;
+  font-family: 'Roboto Flex', sans-serif;
+  
+}
+
+.integrantes {
+  position: relative;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  z-index: 9;
+}
+
+.roteiristas{
+  gap: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 50px;
+  z-index: 9;
+}
+.card-client {
+  background: var(--Preto-Claro);
+  width: 13rem;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 10px #212121;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease;
+}
+
+.card-client:hover {
+  transform: translateY(-10px);
+}
+
+.user-picture {
+  overflow: hidden;
+  object-fit: cover;
+  width: 5rem;
+  height: 5rem;
+  border: 4px solid #fff;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.user-picture i {
+  width: 2.5rem;
+  fill: currentColor;
+}
+
+.name-client {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.name-client span {
+  display: block;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.social-media:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 20px 0;
+  background: #fff;
+}
+
+.social-media a {
+  position: relative;
+  margin-right: 15px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media a:last-child {
+  margin-right: 0;
+}
+
+.social-media a i{
+  font-size: 26px;
+  fill: currentColor;
+}
+
+/*-- Tooltip Social Media --*/
+.tooltip-social {
+  background: #262626;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -90%);
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+
+.tooltip-social:after {
+  content: " ";
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+.social-media a .tooltip-social:after {
+  border-top-color: #262626;
+}
+
+.social-media a:hover .tooltip-social {
+  opacity: 1;
+  transform: translate(-50%, -130%);
+}
+
+.bi-github:hover{
+ color: var(--Preto);
+}
+
+.bi-linkedin:hover{
+  color: #0e76a8
+}
+
+/*Abas interativas*/
+
+#container{
+	background-color: var(--Azul-Escuro);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+  width: 75vw;
+  height: 475px;
+  z-index: 100;
+  margin-bottom: 50px;
+  display: none;
+}
+
+.tab-buttons{
+	display: flex;
+	gap: 6px;
+}
+
+.tab-btn{
+	width: 10%;
+	border: none;
+	border-radius: 8px 8px 0px 0px;
+	background-color: aliceblue;
+	font-weight: 500;
+	padding: 8px;
+	cursor: pointer;
+	transition: background-color .3.5s ease;
+}
+.tab-btn.active{
+	background-color: #44a3fc8a;
+  color: #ffffff;
+}
+
+.tab-btn:hover{
+	background-color: #44a3fc8a;
+	color: #ffffff;
+}
+
+.content{
+	display: none;
+}
+
+.content.show{
+	display: flex;
+  gap: 20px;
+	background-color: #44a3fc8a;
+	padding: 16px;
+  height: 330px;
+  justify-content: center;
+}
+
+
+
+@media(max-width: 1660px){
+  .content.show{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .social-media a i{
+    font-size: 23px;
+    fill: currentColor;
+  }
+  .tab-btn{
+    width: max-content;
+  }
+}
+
+@media(max-width: 1230px){
+  #container{
+    height: 900px;
+  }
+  .content.show{
+    height: 625px;
+    display: flex;
+    align-items: center;
+  }
+  #card-roteiro{
+    height: 50%;
+  }
+}
+
+@media(max-width: 960px){
+  #container{
+    height: 900px;
+  }
+  .content.show{
+    height: 850px;
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+}
+@media(max-width: 785px){
+  .tab-btn{
+    width: 13%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+  }
+  .tab-btn.active{
+    width: 25%;
+    
+  }
+}
+
+@media(max-width: 660px){
+  #container{
+    height: 1320px;
+  }
+  .content.show{
+    height: 1260px;
+  }
+ 
+  #Roteiristas{
+    flex-direction: column;
+  }
+  #card-roteiro{
+    height: 30%;
+  }
+  .tab-btn{
+    width: 16%;
+  }
+  .tab-btn.active{
+    width: 28%;
+    
+  }
+}
+@media(max-width:569px){
+  .tab-btn.active{
+    width: 29%;
+    padding: 8px;
+  }
+}
+@media(max-width:450px){
+  .tab-btn{
+    font-size: 13px;
+  }
+}
+
+@media(max-width: 375px){
+  #card-roteiro{
+    width: 100%;
   }
 }

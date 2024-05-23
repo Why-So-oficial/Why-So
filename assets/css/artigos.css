@@ -55,9 +55,21 @@ h1{
     margin: 20px auto;
 }
 
+/*Exclusivo Artigo 2*/
+#unorganized-list{
+    margin-left: 35px;
+}
+/**/
+
 /*Exclusivo Artigo 6*/
 .languages-logo{
     max-width: 160px;
-    padding: 10px;
+    padding: 5px;
+}
+
+@media (max-width: 360px){
+    .languages-logo{
+        max-width: 140px;
+    }
 }
 /**/

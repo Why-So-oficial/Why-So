@@ -169,10 +169,11 @@ header{
     transition: .4s ease-in-out;
 }
 
-.main{
+main{
     grid-area: main;
     height: 100%;
     width: 100%;
+    z-index: 3;
 }
 
 /* FOOTER */
@@ -188,6 +189,7 @@ header{
     box-shadow: 0px 0px 7px 3px #00000053;
     overflow: hidden ;
     gap: 10%;
+    z-index: 1;
 }
 
 .footer-link{
