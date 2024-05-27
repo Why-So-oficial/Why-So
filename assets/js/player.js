@@ -12,8 +12,25 @@ const timeDuration = document.querySelector('#time-duration');
 const nameCap = document.querySelector('.name-cap')
 
 
+
+
 let index = 0;
 const audio = new Audio(songs[index].src);
+
+
+const cards = document.querySelectorAll('.cards_item');
+
+cards.forEach((element,indexEl)=>{
+    element.addEventListener('click',()=>{
+        index = indexEl;
+        player.classList.add('activePlayer');
+        arrow.style.bottom = `${player.offsetHeight + 20}px`;
+        showPodcast();
+        playSong();
+   })
+})
+
+
 
 function showPodcast(){
     audio.src = songs[index].src;
@@ -65,6 +82,8 @@ function playSong(){
     nameCap.classList.add('activeSlide');
     audio.play();
     playing = true;
+    progressBar.style.width = "0%";
+
 }
 
 function stopSong(){
@@ -84,6 +103,7 @@ function stopOrPlay(){
         stopSong();
     }
 }
+
 
 
 playPause.addEventListener('click', stopOrPlay);
@@ -148,4 +168,22 @@ const arrow = document.querySelector('#arrow');
 arrow.addEventListener('click',() => {
   player.classList.toggle('activePlayer');
   arrow.classList.toggle('activePlayer');
-})
+
+  if(!arrow.classList.contains('activePlayer')){
+    arrow.classList.remove('activePlayer');
+    arrow.style.bottom = `130px`;
+  }else{
+    arrow.classList.add('activePlayer');
+    arrow.style.bottom = `${player.offsetHeight} + 20px`;
+   }
+  }
+)
+
+
+document.body.addEventListener("keydown", function(event) {
+    if (event.keyCode === 32) {
+        if(player.classList.contains('activePlayer')){
+            stopOrPlay();
+        }
+    }
+});

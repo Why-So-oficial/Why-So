@@ -1,47 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head id="head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcasts</title>
-    <script src="../js/global.js" defer></script>
+    <script src="../js/global.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/podcastt.css">
-
+    <link rel="stylesheet" href="../css/podcast.css">
+    <link rel="stylesheet" href="../css/player.css">
+    <link rel="stylesheet" href="../css/youtube.css">
     <script src="../js/player.js" type="module" defer></script>
 </head>
 <body id="body">
     <main class="main">
-        <i class="bi bi-arrow-left-circle-fill" id="arrow"></i>
-        <div id="player" >
-                <div class="characteristics">
-                    <div class="logo-player">
-                        <img src="../img/artigosImg/artigo01.png" class="logo-sound" id="logo-player">
-                    </div>
-                    <div class="container-name">
-                        <p class="name-cap"></p>
-                    </div>
+        <div>
+          <div class="TitleCard">
+            <h1>PodCasts </h1>
+          </div>
+          <ul class="cards">
+            <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/podcast/segurança-cibernetica.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Cybersegurança</h2>
+                    <button class="btn card_btn"><i class="bi bi-headphones" id="phones"></i> OUVIR</button>
+                  </div>
                 </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="../img/podcast/Tecnologia.jpg"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Tecnologia do dia-a-dia</h2>
+                    <button class="btn card_btn"><i class="bi bi-headphones" id="phones"></i> OUVIR</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <section>
+              <br><br><br><br>
+              <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3">
+                <input type="radio" name="slider" id="s4">
+                <input type="radio" name="slider" id="s5">
+                <label for="s1" id="slide1">
+                  <div class="video-responsive"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gUflvDjBI2U?si=lgsOQQTPS_r65oEa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </label>
+                <label for="s2" id="slide2">
+                  <div class="video-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bQrjXGdOgOo?si=dTD1LBziu94BPre9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </label>
+                <label for="s3" id="slide3">
+                  <div class="video-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2x53iQBNi9c?si=ostE4G3Yby4Hp3ea" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </label>
+                <label for="s4" id="slide4">
+                  <div class="video-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1TfwPLaoxNE?si=PfQ1Kn6On0RYaeR3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </label>
+                <label for="s5" id="slide5">
+                  <div class="video-responsive">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7v-5Xr-BW6k?si=_0xH3JoePUghzdN-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                </label>
+              </section>
 
-                <div class="buttons">
-                    <i class="bi bi-skip-backward-circle-fill" id="previus-button"></i>
-                    <i class="bi bi-play-circle-fill" id="playPause"></i>
-                    <!-- <i class="bi bi-pause-circle-fill"></i> -->
-                    <i class="bi bi-skip-forward-circle-fill" id="next-button"></i>
+          </div>
+        <div class="container-player">
+              <div class="control-player" id="arrow" >
+                  <i class="bi bi-headphones" id="phones"></i>
                 </div>
-                <div class="timer">
-                    <span class="counter" id="time-progress">0:00</span>
-
-                    <div class="progress">
-                        <div class="progress-bar"></div>
-                    </div>
-                <span class="counter" id="time-duration">0:00</span>
-                <div class="sound">
-                    <i class="bi bi-volume-up-fill" id="mute-button"></i>
-                    <!-- <i class="bi bi-volume-mute-fill"></i> -->
-                </div>
-                </div>
+                <div id="player" >
+              <div class="characteristics">
+                  <div class="logo-player">
+                      <img src="img/artigosImg/artigo01/artigo01.png" class="logo-sound" id="logo-player">
+                  </div>
+                  <div class="container-name">
+                      <p class="name-cap"></p>
+                  </div>
+              </div>
+              <div class="buttons">
+                  <i class="bi bi-skip-backward-circle-fill" id="previus-button"></i>
+                  <i class="bi bi-play-circle-fill" id="playPause"></i>
+                  <!-- <i class="bi bi-pause-circle-fill"></i> -->
+                  <i class="bi bi-skip-forward-circle-fill" id="next-button"></i>
+              </div>
+              <div class="timer">
+                  <span class="counter" id="time-progress">0:00</span>
+                  <div class="progress">
+                      <div class="progress-bar"></div>
+                  </div>
+              <span class="counter" id="time-duration">0:00</span>
+              <div class="sound">
+                  <i class="bi bi-volume-up-fill" id="mute-button"></i>
+                  <!-- <i class="bi bi-volume-mute-fill"></i> -->
+              </div>
+              </div>
             </div>
+        </div>
     </main>
-</body>
+    </body>
 </html>

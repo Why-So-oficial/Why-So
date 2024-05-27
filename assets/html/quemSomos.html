@@ -4,25 +4,475 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos</title>
+    <script src="../js/quemSomos.js" type="text/javascript" defer></script>
     <script src="../js/global.js" type="text/javascript" defer></script>
+    
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/effects.css">
-    <script src="../js/EfectsBody.js" type="text/javascript" defer></script>
-
+    <link rel="stylesheet" href="../css/quemSomos.css">
 </head>
 <body id="body">
         <main class="main">
             <section>
-                <div class="content">
-                  <div class="info">
-                    <p>A <span class="movie-night">WhySô</span>, uma empresa de tecnologia visionária fundada em 2023, surge como uma força impulsionadora na paisagem digital contemporânea. Comprometida em transcender as fronteiras do convencional, a WhySo é mais do que uma simples entidade comercial; é uma comunidade dedicada à exploração e compreensão das complexidades do mundo tecnológico.</p>
-                    <button class="btn"> <a href="../../index.html" class="link-home">HOME</a></button>
+               <div class="cont">
+                    <div class="info">
+                      <p>A <span class="movie-night">WhySô</span>, uma empresa de tecnologia visionária fundada em 2023, surge como uma força impulsionadora na paisagem digital contemporânea. Comprometida em transcender as fronteiras do convencional, a WhySo é mais do que uma simples entidade comercial; é uma comunidade dedicada à exploração e compreensão das complexidades do mundo tecnológico.</p>
+                      <button class="btn"> <a href="../../index.html" class="link-home">HOME</a></button>
+                    </div>
+                    <div class="swiper">
+                          <img class="imagemQuemSomos" src="../img/ImagemPrincialQuemSomos.png">
+                    </div>
+                </div>
+
+               <h1> Conheça nossa Equipe</h1>
+                <div id="container"> 
+                  
+                  <div class="tab-buttons">
+                    <button class="tab-btn active" content-id="Roteiristas">
+                      Roteiristas
+                    </button>
+                    <button class="tab-btn" content-id="Designers">
+                      Designers
+                    </button>
+                    <button class="tab-btn" content-id="Youtubers">
+                      Youtubers
+                    </button>
+                    <button class="tab-btn" content-id="Podcasters">
+                      Podcasters
+                    </button>
+                    <button class="tab-btn" content-id="Desenvolvedores">
+                      DEV'S
+                    </button>
                   </div>
-                  <div class="swiper">
-                        <img class="imagemQuemSomos" src="../img/ImagemPrincialQuemSomos.png">
+                  
+                  <div class="tab-contents">
+                    
+                    <div class="content" id="Roteiristas">
+
+                      <div class="card-client" id="card-roteiro">
+                        <div class="user-picture">
+                            <img class="img-sobre" src="/assets/img/quemSomos/unnamed 1.webp" alt="">
+                        </div>
+                        <p class="name-client"> Alicia Paula
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/aliciap_coimbra?igsh=MTRkYjV2N2RxN284bw==" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/AliciaPaula" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alicia-paula-coimbra-263214233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+                      
+                      <div class="card-client" id="card-roteiro">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/lauris.png" alt="">
+                        </div>
+                        <p class="name-client"> Lauris Valentina
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/lauriss.valn?igsh=NW1iMDVrd2Y2dzZn" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lauris-gonz%C3%A1lez-08a90430b/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  
+                    <div class="content" id="Designers">
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/1716832840056.jpg" alt="">
+                        </div>
+                        <p class="name-client"> Danilo Pacelli
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="#" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                            <img class="img-sobre" src="/assets/img/quemSomos/arthurfoto.jpg" alt="">
+                        </div>
+                        <p class="name-client"> Arthur Almeida
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arthur-almeida-120720256/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                            <img class="img-sobre" src="/assets/img/quemSomos/fotoFelipe.jpg" alt="">
+                        </div>
+                        <p class="name-client"> Felipe Marcos
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/_f.marcos?igsh=MWMzdnB3NmU4eXhieA==" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/felipe-marcos-a72a37307/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/20230405_140208.jpg" alt="">
+                        </div>
+                        <p class="name-client"> Vinicius Paiva
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="#" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  
+                    <div class="content" id="Youtubers">
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/Mídia (2).jpg" alt="">
+                        </div>
+                        <p class="name-client"> Charley Junior
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/_charleyzz?igsh=OWVkanJwMnRrcGoz" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/CharleyJrDEV" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/charley-junio-de-souza-oliveira-105a24249/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/Mídia (1).jpg" alt="">
+                        </div>
+                        <p class="name-client"> Silas Tsunoda
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/_tsunoda.z?igsh=aDl..." target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/SilasTBarros" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://br.linkedin.com/in/silas-tsunoda-barros-726846256" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/Mídia.jpg" alt="">
+                        </div>
+                        <p class="name-client"> Gabriel Henrique
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/gabriel_fernandes_05?igsh=MTNvcnduNHdkc3dpcw==" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/GabrielFernandes5" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gabriel-henrique-reis-fernandes-3138a228a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  
+                    <div class="content" id="Podcasters">
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/arthur.jpg" alt="">
+                        </div>
+                        <p class="name-client"> Arthur Lage
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/Arthur5453" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="#" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/lorena.png" alt="">
+                        </div>
+                        <p class="name-client"> Lorena Eduarda
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/f1lorena?igsh=MWRueTYwaW1jdGtjYw==" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/luckittykat" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="http://www.linkedin.com/in/lorenasantosdev" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/Graciano.png" alt="">
+                        </div>
+                        <p class="name-client"> Graciano Siles
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="#" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/Hugo.png" alt="">
+                        </div>
+                        <p class="name-client"> Hugo
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/castroo.hugo?igsh=MWJ2MThiaWF5NWQ2Yg==" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/HugoCastro0704" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hugo-castro-017846256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                  
+                    <div class="content" id="Desenvolvedores">
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/Dayvid.png" alt="">
+                        </div>
+                        <p class="name-client"> Dayvid Ornelas
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="#" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/Dayvid-Ornelas" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/dayvid-ornelas-459b61249/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                            <img class="img-sobre" src="/assets/img/quemSomos/Captura de tela 2024-05-27 140913.png" alt="">
+                        </div>
+                        <p class="name-client"> Clayton Henrique
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/cleitinx06?igsh=cHd4cHU5NGNiZzdj" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/CodeClayton" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/clayton-henrique-099b0230a/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                          <img  class="img-sobre" src="../img/quemSomos/matheus.jpeg" alt=""> 
+                        </div>
+                        <p class="name-client">Matheus Ferreira
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/omatheusfferreira?igsh=NmR4dnpkbWJpZ2Vw" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/ColDDz" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/matheus-henrique-728846256/" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+
+                      <div class="card-client">
+                        <div class="user-picture">
+                            <img class="img-sobre" src="../img/quemSomos/IMG_20231208_104809_168.jpg " alt="">
+                        </div>
+                        <p class="name-client">Miguel Lizardo
+                            <span>
+                            </span>
+                        </p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/miguellzf?igsh=djhpdWhiNmg4cWky" target="_blank">
+                                <i class="bi bi-instagram"></i>
+                                <span class="tooltip-social">Instagram</span>
+                            </a>
+                            <a href="https://github.com/miguellzf" target="_blank">
+                                <i class="bi bi-github"></i>
+                                <span class="tooltip-social">GitHub</span>
+                            </a>
+                            <a href="#" target="_blank">
+                              <i class="bi bi-linkedin"></i>
+                                <span class="tooltip-social">LinkedIn</span>
+                            </a>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                  
                   </div>
                 </div>
-                
+
                 <ul class="circles">
                   <li></li>
                   <li></li>
