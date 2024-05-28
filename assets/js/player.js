@@ -1,6 +1,8 @@
 //Pega os audios dos podcasts
 import songs from "../js/songs.js";
 
+
+//Pegando os elementos do HTML
 const player = document.querySelector('#player')
 const logoPlayer = document.querySelector('#logo-player');
 const previousBtn = document.querySelector('#previus-button');
@@ -11,13 +13,11 @@ const progressBar = document.querySelector('.progress-bar');
 const timeDuration = document.querySelector('#time-duration');
 const nameCap = document.querySelector('.name-cap')
 
-
-
-
 let index = 0;
 const audio = new Audio(songs[index].src);
 
 
+//Funcionalidade ao clicar em card de player
 const cards = document.querySelectorAll('.cards_item');
 
 cards.forEach((element,indexEl)=>{
@@ -27,11 +27,11 @@ cards.forEach((element,indexEl)=>{
         arrow.style.bottom = `${player.offsetHeight + 20}px`;
         showPodcast();
         playSong();
-   })
+    })
 })
 
 
-
+//Atualizar foto nome e audio do player
 function showPodcast(){
     audio.src = songs[index].src;
     nameCap.innerHTML = songs[index].name;
@@ -75,7 +75,7 @@ const qtdCapitulos = songs.length;
 
 let playing = false;
 
-
+//Funcionalidade tocar player
 function playSong(){
     playPause.classList.remove('bi-play-circle-fill');
     playPause.classList.add('bi-pause-circle-fill');
@@ -86,6 +86,7 @@ function playSong(){
 
 }
 
+//Funcionalidade tocar Pausar
 function stopSong(){
 
     playPause.classList.add('bi-play-circle-fill');
@@ -105,13 +106,14 @@ function stopOrPlay(){
 }
 
 
-
+//Adicionando as funcionalidades aos botoes do HTML
 playPause.addEventListener('click', stopOrPlay);
 nextBtn.addEventListener('click', nextCap);
 previousBtn.addEventListener('click', previousCap);
 
 audio.addEventListener('ended', nextCap);
 
+//Voltar um episodio do podcast
 function previousCap(){
     if(index === 0){
         index = qtdCapitulos;
@@ -123,7 +125,7 @@ function previousCap(){
     logoPlayer.src = songs[index].photo;
     playSong();
 }
-
+//avançar um episodio do podcast
 function nextCap(){
     index++
     if(index >= qtdCapitulos){
@@ -136,6 +138,7 @@ function nextCap(){
     playSong();
 }
 
+//Funcionalidade de atualizar os segundos do player
 function updateTime(){
     const currentMinutes = Math.floor(audio.currentTime / 60);
     const currentSeconds = Math.floor(audio.currentTime % 60);
@@ -164,6 +167,7 @@ function formatZero(n){
     return n; 
 }
 
+//Funcionalidade ao clicar no botao do player
 const arrow = document.querySelector('#arrow');
 arrow.addEventListener('click',() => {
   player.classList.toggle('activePlayer');
@@ -179,7 +183,7 @@ arrow.addEventListener('click',() => {
   }
 )
 
-
+//Tocar ou pausar player com botao espaço
 document.body.addEventListener("keydown", function(event) {
     if (event.keyCode === 32) {
         if(player.classList.contains('activePlayer')){
